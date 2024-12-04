@@ -42,7 +42,7 @@ class Cliente(models.Model):
     
     
 #Creacion de modelo de Orden de servicio 
-class OrdeneDeServicio(models.Model):
+class OrdenDeServicio(models.Model):
     ESTADOS=[
         ('pendiente', 'Pendiente'),
         ('proceso', 'En Proceso'),
