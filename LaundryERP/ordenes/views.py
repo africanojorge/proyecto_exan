@@ -24,7 +24,7 @@ def crear_orden(request):
         form = OrdenDeServicioForm()      
     return render(request,'ordenes/crear_orden.html', {'form':form})
  
-def actualizar_orden(request, id):
+def actualizar_estado(request, id):
     orden = get_object_or_404(OrdenDeServicio, id=id)
     if request.method == 'POST':
         estado = request.post.get('estado')

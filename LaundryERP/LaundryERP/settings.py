@@ -133,4 +133,4 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'usuario.Usuario' #registrando usuario modelo
+AUTH_USER_MODEL = 'usuarios.Usuario'   #registrando usuario modelo

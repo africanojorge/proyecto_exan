@@ -39,8 +39,7 @@ class Cliente(models.Model):
     def __str__(self):
         return self.nombre
 
-    
-    
+     
 #Creacion de modelo de Orden de servicio 
 class OrdenDeServicio(models.Model):
     ESTADOS=[
@@ -64,5 +63,5 @@ class OrdenDeServicio(models.Model):
         return self.total
 
 
-    def __str__(self):
+    def __str__(self):   # devielve cadena de caracteres 
         return f"Orden #{self.id} - {self.cliente.nombre} - {self.estado} - {self.total}"

@@ -10,7 +10,7 @@ class VentaForm(forms.ModelForm):
         fields = ['orden_servicio', 'monto_total', 'metodo_pago']
         widgets = {
             'orden_servicio': forms.Select(attrs={'class': 'form-control'}),
-            'monto_total': forms.NomberInput(attrs={'class': 'form-control', 'placeholder':'Monto Total'}),
+            'monto_total': forms.NumberInput(attrs={'class': 'form-control', 'placeholder':'Monto Total'}),
             'metodo_pago': forms.Select(attrs={'class': 'form-control'}),
         }
         
